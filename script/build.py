@@ -53,8 +53,8 @@ def main():
 
     if (machine == 'arm64') and (machine != common.native_machine()):
       args += [
-        'cc="aarch64-linux-gnu-gcc-10"',
-        'cxx="aarch64-linux-gnu-g++-10"',
+        'cc="aarch64-linux-gnu-gcc"',
+        'cxx="aarch64-linux-gnu-g++"',
         'extra_cflags=["-I/usr/aarch64-linux-gnu/include"]'
       ]
     else:
