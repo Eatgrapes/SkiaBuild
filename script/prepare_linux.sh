@@ -8,6 +8,7 @@ apt-get update -y
 apt-get install build-essential software-properties-common -y
 apt-get update
 apt-get install gcc-10 g++-10 -y
+apt-get install gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
 update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-10 60 --slave /usr/bin/g++ g++ /usr/bin/g++-10
 update-alternatives --config gcc 
 
